@@ -1,0 +1,29 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. lesson4.
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       DATA DIVISION.
+       FILE SECTION.
+       WORKING-STORAGE SECTION. 
+
+
+       PROCEDURE DIVISION.
+       SUBONE.
+           DISPLAY "IN PARAGRAPH 1".
+           PERFORM SUBTWO.
+           DISPLAY "RETURNED TO PARAGRAPH 1".
+
+           PERFORM SUBFOUR 2 TIMES
+
+           STOP RUN.
+       
+       SUBTHREE.
+           DISPLAY "IN PARAGRAPH 3".
+
+       SUBTWO.
+           DISPLAY "IN PARAGRAPH 2".
+           PERFORM SUBTHREE.
+           DISPLAY "RETURNED TO PARAGRAPH 2".
+
+       SUBFOUR.
+           DISPLAY "REPEAT".
