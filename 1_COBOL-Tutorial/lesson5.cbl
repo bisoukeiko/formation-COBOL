@@ -1,0 +1,17 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LESSON5.
+       AUTHOR. BISOU.
+       DATE-WRITTEN. 20052026.
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  NUM1          PIC 9 VALUE 5.
+       01  NUM2          PIC 9 VALUE 4.
+       01  SUM1          PIC 99.
+
+       PROCEDURE DIVISION.
+           CALL 'GETSUM' USING NUM1, NUM2, SUM1.
+           DISPLAY NUM1 " + " NUM2 " = " SUM1.
+
+           STOP RUN.

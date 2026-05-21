@@ -1,0 +1,62 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LESSON9.
+       AUTHOR. BISOU.
+       DATE-WRITTEN. 21-05-2026.
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  SAMPSTR          PIC X(18) VALUE 'EERIE BEEF SNEEZED'.
+       01  NUMCHARS         PIC 99 VALUE 0.
+       01  NUMES            PIC 99 VALUE 0.
+       01  FNAME            PIC X(6) VALUE 'MARTIN'.
+       01  MNAME            PIC X(11) VALUE 'LUTHER KING'.
+       01  LNAME            PIC X(4) VALUE 'KING'.
+       01  FLNAME           PIC X(11).
+       01  FMLNAME          PIC X(18).
+       01  SSTR1            PIC X(7) VALUE 'THE EGG'.
+       01  SSTR2            PIC X(9) VALUE 'IS #1 AND'.
+       01  DEST             PIC X(33) VALUE 'IS THE BIG CHICKEN'.
+       01  PTR              PIC 9 VALUE 1.
+       01  SSTR3            PIC X(3).
+       01  SSTR4            PIC X(3).
+      
+       PROCEDURE DIVISION.
+           INSPECT SAMPSTR TALLYING NUMCHARS FOR CHARACTERS.
+           DISPLAY "NUMBER OF CHARACTERS : " NUMCHARS.
+
+           INSPECT SAMPSTR TALLYING NUMES FOR ALL 'E'.
+           DISPLAY "NUMBER OF Es : " NUMES.
+
+           DISPLAY FUNCTION UPPER-CASE(SAMPSTR).
+           DISPLAY FUNCTION LOWER-CASE(SAMPSTR).
+
+           STRING FNAME DELIMITED BY SIZE
+           SPACE
+           LNAME DELIMITED BY SIZE
+           INTO FLNAME.
+           DISPLAY FLNAME.
+
+           STRING FLNAME DELIMITED BY SPACES
+           SPACE
+           MNAME DELIMITED BY SIZE
+           SPACE
+           LNAME DELIMITED BY SIZE
+           INTO FMLNAME
+           ON OVERFLOW DISPLAY 'overflowed'.
+           DISPLAY FMLNAME.
+
+           STRING SSTR1 DELIMITED BY SIZE
+           SPACE
+           SSTR2 DELIMITED BY "#"
+           INTO DEST
+           WITH POINTER PTR
+           ON OVERFLOW DISPLAY 'overflowed'.
+           DISPLAY DEST.
+
+           UNSTRING SSTR1 DELIMITED BY SPACE
+           INTO SSTR3, SSTR4
+           END-UNSTRING.
+           DISPLAY SSTR4.
+
+           STOP RUN.

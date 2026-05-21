@@ -1,0 +1,34 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LESSON6.
+       AUTHOR. BISOU.
+       DATE-WRITTEN. 21-05-2026.
+
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  STARTNUM          PIC 9(8)V99 VALUE 00001123.55.
+       01  NOZERO            PIC ZZZZZZZ9.99.
+       01  NOZPLUSC       PIC ZZ,ZZZ,ZZ9.99.
+       01  DOLLAR            PIC $$,$$$,$$9.99.
+       01  BDAY              PIC 9(8) VALUE 12211974.
+       01  ADATE                 PIC 99/99/9999.
+
+       PROCEDURE DIVISION.
+           DISPLAY "STARTNUM: " STARTNUM.
+
+           MOVE STARTNUM TO NOZERO.
+           DISPLAY "NOZERO: " NOZERO.
+
+           MOVE STARTNUM TO NOZPLUSC.
+           DISPLAY "NOZPLUSC: " NOZPLUSC.
+
+           MOVE STARTNUM TO DOLLAR.
+           DISPLAY "DOLLAR: " DOLLAR.
+
+           DISPLAY "BDAY: " BDAY.
+           MOVE BDAY TO ADATE.
+           DISPLAY "ADATE: " ADATE.
+
+           STOP RUN.
