@@ -107,3 +107,13 @@ I am studying COBOL by following this YouTube tutorial: [COBOL Tutorial : Learn 
   - AFTER ADVANCING 1 LINE   改行してから印字
   - BEFORE ADVANCING 1 LINE  印字してから改行
   - AFTER ADVANCING PAGE   ページ区切りしてから印字
+
+
+### lesson14
+- Indexed Files
+- Access Data Randomly
+  - ORGANIZATION IS INDEXED
+- Save Record
+- Delete Record
+- Update Record
+- Get Record
