@@ -99,3 +99,11 @@ I am studying COBOL by following this YouTube tutorial: [COBOL Tutorial : Learn 
 
 ### lesson12
 - Read File
+
+
+### lesson13
+- Create Reports
+  - Filler
+  - AFTER ADVANCING 1 LINE   改行してから印字
+  - BEFORE ADVANCING 1 LINE  印字してから改行
+  - AFTER ADVANCING PAGE   ページ区切りしてから印字
