@@ -135,3 +135,7 @@ I am studying COBOL by following this YouTube tutorial: [COBOL Tutorial : Learn 
 ### lesson17
 - Sort Records
   - SORT ... USING ... GIVING ...
+
+### lesson18
+- Merge Files
+  - MERGE ... USING ... GIVING ...
