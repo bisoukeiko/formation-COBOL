@@ -117,3 +117,21 @@ I am studying COBOL by following this YouTube tutorial: [COBOL Tutorial : Learn 
 - Delete Record
 - Update Record
 - Get Record
+
+### lesson15
+- Multidimensional Tables
+  - OCCURS
+- Index Tables
+  - INDEXED BY
+  - SET UP BY
+  - SET DOWN BY
+- Search Tables
+
+### lesson16
+- Prefill Tables
+- Redefine
+- String to Float
+
+### lesson17
+- Sort Records
+  - SORT ... USING ... GIVING ...
